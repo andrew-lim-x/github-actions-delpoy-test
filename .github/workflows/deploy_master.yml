@@ -12,8 +12,8 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@v1
+    # - name: checkout
+    #   uses: actions/checkout@v1
 
     - name: test executing remote ssh commands using ssh key
       uses: appleboy/ssh-action@master
