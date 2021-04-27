@@ -9,13 +9,13 @@ on:
 jobs:
 
   build:
-    name: Build
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@v1
+    # - name: checkout
+    #   uses: actions/checkout@v1
 
-    - name: executing remote ssh commands using ssh key
+    - name: test executing remote ssh commands using ssh key
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
