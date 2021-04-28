@@ -12,7 +12,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    # - name: checkout2
+    # - name: checkout3
     #   uses: actions/checkout@v1
 
     - name: test executing remote ssh commands using ssh key
