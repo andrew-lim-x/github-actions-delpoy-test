@@ -12,19 +12,6 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    # - name: checkout
-    #   uses: actions/checkout@v1
-
-    # - name: test executing remote ssh commands using ssh key
-    #   uses: appleboy/ssh-action@master
-    #   with:
-    #     host: ${{ secrets.HOST }}
-    #     username: ${{ secrets.USERNAME }}
-    #     key: ${{ secrets.KEY }}
-    #     port: ${{ secrets.PORT }}
-    #     passphrase: ${{ secrets.PASSPHRASE }}
-    #     script: whoami
-
     - name: Configure SSH
         run: |
           mkdir -p ~/.ssh/
