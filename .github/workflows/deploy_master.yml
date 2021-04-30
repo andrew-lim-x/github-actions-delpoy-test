@@ -43,4 +43,4 @@ jobs:
         SSH_HOST: ${{ secrets.HOST }}
     
     - name: Run command
-        run: ssh -t staging 'whoami'
+      run: ssh -t staging 'whoami'
