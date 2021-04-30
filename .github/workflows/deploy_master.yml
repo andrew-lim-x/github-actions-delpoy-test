@@ -12,7 +12,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    
+
     - name: test executing remote ssh commands using ssh key
       uses: appleboy/ssh-action@master
       with:
@@ -20,4 +20,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        script: whoami
+        script: welcome.sh
