@@ -25,7 +25,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           whoami
-          welcome.sh
+          sh ~/bin/welcome.sh
           ls -al
 
     # - name: Configure SSH
