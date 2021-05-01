@@ -24,9 +24,9 @@ jobs:
         port: ${{ secrets.PORT }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          whoami
-          sh ~/bin/welcome.sh
-          ls -al
+          sh ~/bin/deploy-test.sh
+
+    # ls -al
 
     # - name: Configure SSH
     #   run: |
