@@ -1,0 +1,32 @@
+name: Deploy to production
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Configure SSH
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$SSH_KEY" > ~/.ssh/prod.key
+        chmod 600 ~/.ssh/prod.key
+        cat >>~/.ssh/config <<END
+        Host prod
+          HostName $SSH_HOST
+          User $SSH_USER
+          IdentityFile ~/.ssh/prod.key
+          StrictHostKeyChecking no
+        END
+      env:
+        SSH_USER: ${{ secrets.USERNAME }}
+        SSH_KEY: ${{ secrets.KEY }}
+        SSH_HOST: ${{ secrets.HOST }}
+    
+    - name: Running deploy command
+      run: ssh -t prod 'sh ~/bin/deploy-github-test-prod.sh'
