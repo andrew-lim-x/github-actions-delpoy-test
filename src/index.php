@@ -11,9 +11,5 @@
 </p>
 
 <p>
-    Morbi vulputate dapibus ultricies. Donec id dolor in enim pellentesque mattis nec non massa. Praesent magna nibh, vehicula quis est porta, dapibus aliquam ligula. Suspendisse ligula leo, rutrum cursus tristique id, ornare non purus. Sed nec turpis congue, mattis eros ac, placerat justo. In odio libero, mollis quis consequat a, tincidunt lacinia tortor. Vestibulum dapibus, arcu vitae posuere elementum, erat turpis efficitur nibh, id fermentum mauris purus at dui.
-</p>
-
-<p>
 Donec nec arcu at mi faucibus viverra a a erat. Sed molestie sollicitudin sagittis. Mauris commodo lacinia erat, id mollis arcu posuere vitae. Nullam aliquet dolor vestibulum erat lobortis, eu elementum ipsum porta. Proin purus dui, commodo et tempus non, auctor in metus. Integer pulvinar consequat iaculis. Morbi odio massa, porttitor nec ultricies sit amet, ultricies nec ex. Pellentesque sit amet maximus nibh. In sed libero ante. Quisque iaculis nec quam vitae elementum.
 </p>
